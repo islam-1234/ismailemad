@@ -44,17 +44,9 @@ const FIREBASE_CONFIG = {
 // ============================================================
 // Cloudflare Worker URL
 // ------------------------------------------------------------
-// رابط الـ Worker المرفوع على Cloudflare.
-//
-// ⚠️ ملاحظة مهمة:
-//   الرابط ده بيشتغل بعد ما تنشر الـ Worker عبر wrangler.
-//   لو ما اتنشرش بعد → كل الطلبات هترجع NETWORK_ERROR.
-//
-// للتأكد من أن الـ Worker يعمل:
-//   افتح: https://sweet-bonus-ac23.islammanassa1.workers.dev/api/ping
-//   المتوقع: {"success":true,"data":{"pong":true,...}}
+// رابط الـ Worker المرتبط بالدومين الجديد.
 // ============================================================
-const WORKER_URL = "https://sweet-bonus-ac23.islammanassa1.workers.dev";
+const WORKER_URL = "https://mrismailemad.com";
 
 
 // ============================================================
@@ -77,4 +69,5 @@ const APP_INFO = {
 // ------------------------------------------------------------
 // تصدير الإعدادات لاستخدامها في باقي ملفات المشروع.
 // ============================================================
+export { FIREBASE_CONFIG, WORKER_URL, APP_INFO };
 export { FIREBASE_CONFIG, WORKER_URL, APP_INFO };
